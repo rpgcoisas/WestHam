@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Oficial de West Ham - Relatórios</title>
+    <link rel="stylesheet" href="./west.css">
+</head>
+<body>
+    <header>
+        <div class="header-titulo">
+            <h1>Sistema de Registros de West Ham</h1>
+        </div>
+        <nav>
+            <button class="aba-principal" onclick="window.location.href='index.html'">Página Inicial</button>
+            <button class="aba-principal" onclick="window.location.href='criaturas.html'">Criaturas</button>
+            <button class="aba-principal" onclick="window.location.href='funcionarios.html'">Funcionários</button>
+            <button class="aba-principal" onclick="window.location.href='moradores.html'">Moradores</button>
+            <button class="aba-principal ativo" onclick="window.location.href='relatorios.html'">Relatórios</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="secao-conteudo ativa">
+            <h2>Arquivos Departamentais</h2>
+            <p>Selecione a categoria do documento no menu lateral para visualizar os arquivos.</p>
+            
+            <div class="relatorios-container">
+                <div class="menu-lateral">
+                    <h3>Setor Policial</h3>
+                    <button class="btn-relatorio" onclick="abrirRelatorio(this, 'policial-1')">Invasão Domiciliar - Yuchen</button>
+
+                    <br>
+                    <h3>Setor Médico</h3>
+                    <button class="btn-relatorio" onclick="abrirRelatorio(this, 'medico-1')">Prontuário: Robin Yuchen</button>
+                    <button class="btn-relatorio" onclick="abrirRelatorio(this, 'medico-2')">Prontuário: Marie Mei</button>
+                    <button class="btn-relatorio" onclick="abrirRelatorio(this, 'medico-3')">Prontuário: Angelina</button>
+                </div>
+
+                <div class="area-documento">
+                    <div id="policial-1" class="documento">
+                        <h2>RELATÓRIO PERICIAL — ANÁLISE DE LOCAL</h2>
+                        <p><strong>Perito responsável:</strong> Adrien Hayes</p>
+                        <p><strong>Local:</strong> Residência de Yuchen — West Ham</p>
+                        <p><strong>Tipo de ocorrência:</strong> Possível invasão / análise de inconsistências</p>
+                        
+                        <h4>1. Acesso à residência</h4>
+                        <p>Ao chegar ao local, foi constatada tentativa prévia de arrombamento na porta principal. Próximo à maçaneta, observavam-se farpas soltas e danos estruturais compatíveis com força externa aplicada anteriormente. Durante tentativa de abertura com grampo, o objeto partiu-se, indicando resistência interna comprometida. Em seguida, ao aplicar força direta, a parte interna da maçaneta desprendeu-se, caindo no chão do interior da residência e liberando o acesso.</p>
+                        <p>A fragilidade estrutural da fechadura indica que a porta já havia sido comprometida anteriormente, sugerindo tentativa de entrada forçada anterior à chegada do perito. O padrão de dano é compatível com intervenção humana, não havendo indícios imediatos que apontem para ação de criatura.</p>
+                        <h4>2. Sala e cozinha</h4>
+                        <p>A sala encontrava-se intacta. Na cozinha, observou-se anomalia na janela, com sinais de possível tentativa de forçamento. O vidro apresentava marcas de dedos com aspecto gorduroso.</p>
+
+                        <h4>Conclusão pericial</h4>
+                        <ul>
+                            <li>Há evidências de tentativa de arrombamento humano na porta principal.</li>
+                            <li>Trilha de sangue no corredor não corresponde ao estado interno do quarto.</li>
+                            <li>A porta trancada pelo interior após suposta saída constitui inconsistência.</li>
+                        </ul>
+                    </div>
+
+                    <div id="medico-1" class="documento">
+                        <h2>RELATÓRIO MÉDICO GERAL</h2>
+                        <p><strong>Médico responsável:</strong> Viego C. McGrath | <strong>Data:</strong> 08/04/2026</p>
+                        
+                        <table>
+                            <tr>
+                                <th>Paciente</th>
+                                <th>Idade</th>
+                                <th>Sexo</th>
+                            </tr>
+                            <tr>
+                                <td>Robin Yuchen Fang</td>
+                                <td>26</td>
+                                <td>M</td>
+                            </tr>
+                        </table>
+
+                        <p><strong>Queixa principal:</strong> Ferimento perfurocortante em membro superior (braço).</p>
+                        <p><strong>História do ocorrido:</strong> Paciente vítima de agressão por arma branca, apresentando lesão profunda no braço, com sangramento significativo.</p>
+                        
+                        <h4>Conduta médica</h4>
+                        <ul>
+                            <li>Controle do sangramento e estabilização clínica.</li>
+                            <li>Sutura do ferimento com pontos.</li>
+                            <li>Administração de fluidos e medicação analgésica.</li>
+                        </ul>
+                    </div>
+
+                    <div id="medico-2" class="documento">
+                        <h2>RELATÓRIO MÉDICO GERAL</h2>
+                        <p><strong>Médico responsável:</strong> Viego C. McGrath | <strong>Data:</strong> 05/04/2026</p>
+                        
+                        <table>
+                            <tr>
+                                <th>Paciente</th>
+                                <th>Idade</th>
+                                <th>Sexo</th>
+                            </tr>
+                            <tr>
+                                <td>Marie Mei</td>
+                                <td>23</td>
+                                <td>F</td>
+                            </tr>
+                        </table>
+
+                        <p><strong>Queixa principal:</strong> Ferimento cortante em região de ombro.</p>
+                        <p><strong>História do ocorrido:</strong> Paciente relata ter sido atingida por uma garrafa de vidro. O impacto causou laceração profunda na região do ombro.</p>
+                    </div>
+
+                    <div id="medico-3" class="documento">
+                        <h2>RELATÓRIO MÉDICO GERAL</h2>
+                        <p><strong>Médico responsável:</strong> Viego C. McGrath | <strong>Data:</strong> 10/04/2026</p>
+                        
+                        <table>
+                            <tr>
+                                <th>Paciente</th>
+                                <th>Idade</th>
+                                <th>Sexo</th>
+                            </tr>
+                            <tr>
+                                <td>Angelina</td>
+                                <td>21</td>
+                                <td>F</td>
+                            </tr>
+                        </table>
+
+                        <p><strong>Queixa principal:</strong> Ferimento cortante em membro superior após agressão dentro da unidade hospitalar.</p>
+                        <p><strong>Conduta:</strong> Controle do sangramento, assepsia e irrigação da ferida. Notificação da polícia local.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function abrirRelatorio(elementoBotao, idDocumento) {
+            const botoesRelatorio = document.querySelectorAll('.btn-relatorio');
+            botoesRelatorio.forEach(btn => btn.classList.remove('ativo'));
+            
+            const documentos = document.querySelectorAll('.documento');
+            documentos.forEach(doc => doc.classList.remove('ativo'));
+
+            elementoBotao.classList.add('ativo');
+            document.getElementById(idDocumento).classList.add('ativo');
+        }
+    </script>
+</body>
+</html>
