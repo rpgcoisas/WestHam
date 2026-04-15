@@ -225,3 +225,60 @@
         .card-info strong {
             color: #555;
         }
+
+        @media (max-width: 768px) {
+            
+            nav {
+                flex-wrap: wrap;
+            }
+
+            nav button {
+                width: 50%;
+                padding: 12px 10px;
+                font-size: 0.9rem;
+                border-bottom: 1px solid rgba(255,255,255,0.1);
+            }
+
+            main {
+                margin: 15px 10px;
+                padding: 15px;
+                min-height: auto;
+            }
+
+            .relatorios-container {
+                flex-direction: column;
+            }
+
+            .menu-lateral {
+                width: 100%;
+                border-right: none;
+                border-bottom: 2px solid var(--cor-borda);
+                padding-right: 0;
+                padding-bottom: 20px;
+                margin-bottom: 20px;
+            }
+
+            .area-documento {
+                padding: 0;
+            }
+
+            .card-perfil {
+                flex-direction: column;
+            }
+
+            .card-foto {
+                width: 100%;
+                border-right: none;
+                border-bottom: 1px solid var(--cor-borda);
+            }
+
+            .card-foto img {
+                min-height: 250px;
+            }
+
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
