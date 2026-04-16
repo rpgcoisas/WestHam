@@ -45,6 +45,10 @@
             background-color: var(--cor-destaque);
         }
 
+        .credito {
+            text-align: center;
+        }
+
         nav button {
             background: none;
             border: none;
