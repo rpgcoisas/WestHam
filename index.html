@@ -24,6 +24,14 @@
         <section class="secao-conteudo ativa">
             <h2>Bem-vindo ao Portal de West Ham</h2>
             <p> Oiiii gostou </p>
+
+            <div class="noticias">
+                <div class="noticia ativa">Notícia 1:</div>
+                <div class="noticia">Notícia 2: </div>
+                <div class="noticia">Notícia 3:</div>
+            </div>
+
+
             <div class="aviso">
                 <strong>Atenção:</strong> <small>ooc.</small>Se você não ta na lista de moradores ou funcionários, manda mensagem pra staff.
             </div>
@@ -35,3 +43,24 @@
     </footer>
 </body>
 </html>
+
+<script>
+// Seleciona todas as divs com a classe 'noticia'
+const noticias = document.querySelectorAll('.noticia');
+let indiceAtual = 0;
+
+function alternarNoticia() {
+  // Remove a classe da notícia que está aparecendo agora
+  noticias[indiceAtual].classList.remove('ativa');
+
+  // Calcula qual é a próxima notícia (volta ao zero se for a última)
+  indiceAtual = (indiceAtual + 1) % noticias.length;
+
+  // Adiciona a classe para exibir a nova notícia
+  noticias[indiceAtual].classList.add('ativa');
+}
+
+// Configura o navegador para executar a função a cada 5 segundos
+setInterval(alternarNoticia, 5000);
+
+</script>
