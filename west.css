@@ -273,18 +273,19 @@
         .noticias {
   width: 100%;
   max-width: 500px;
-  height: 60px;
+  height: 150px;
   position: relative;
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 4px;
   overflow: hidden;
+  margin: 10px auto;
 }
 
 .noticia {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height:100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -296,4 +297,17 @@
 
 .noticia.ativa {
   opacity: 1;
+}
+
+.noticia img {
+  max-width: 70px;
+  object-fit: cover;
+  align-items: left;
+  margin: 10px;
+}
+
+.noticia-texto {
+  flex: 1; 
+  margin: 10px;
+  text-align: left;
 }

@@ -26,9 +26,27 @@
             <p> Oiiii gostou </p>
 
             <div class="noticias">
-                <div class="noticia ativa">Notícia 1:</div>
-                <div class="noticia">Notícia 2: </div>
-                <div class="noticia">Notícia 3:</div>
+                <div class="noticia ativa">
+                    <img src="fotos/Matthew.jpg" class="noticia-img">
+                    <div class="noticia-texto">
+                        <p><strong>a noticia mais importante da semana</strong></p>
+                        <p>O Matthew é tipo o morador mais bonito de West Ham!</p>
+                    </div>
+                </div>
+                <div class="noticia">
+                    <img src="fotos/Adrien.jpg" class="noticia-img">
+                    <div class="noticia-texto">
+                        <p><strong>Atenção</strong></p>
+                        <p>Não deixe este homem trabalhar!</p>
+                    </div>
+                </div>
+                <div class="noticia">
+                    <img src="fotos/Athena.jpg" class="noticia-img">
+                    <div class="noticia-texto">
+                        <p><strong>Vazou!</strong></p>
+                        <p>A mais preguiçosa de West Ham!</p>
+                    </div>
+                </div>
             </div>
 
 
@@ -60,7 +78,7 @@ function alternarNoticia() {
   noticias[indiceAtual].classList.add('ativa');
 }
 
-// Configura o navegador para executar a função a cada 5 segundos
-setInterval(alternarNoticia, 5000);
+// Configura o navegador para executar a função a cada 4 segundos
+setInterval(alternarNoticia, 4000);
 
 </script>
