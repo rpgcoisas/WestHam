@@ -398,3 +398,13 @@
         .tabela td:last-child {
             border-right: none;
         }
+
+        .alerta {
+            background-color: #fee8e8; 
+            border-left: 4px solid rgba(255, 0, 0, 0.897); 
+            padding: 12px 15px;
+            margin-top: 20px;
+            color: var(--cor-texto-principal);
+            border-radius: 0 4px 4px 0;
+            font-size: 0.95rem;
+        }
